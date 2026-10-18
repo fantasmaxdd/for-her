@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17112d">
+  <meta name="description" content="Маленькая вселенная, созданная специально для тебя. С днём рождения, солнышко!">
+  <title>Для моего солнышка ✦</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars stars-a"></div><div class="stars stars-b"></div>
+    <div class="moon"></div><div class="planet planet-a"></div><div class="planet planet-b"></div>
+  </div>
+  <div class="progress" id="progress"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="На главную"><span class="brand-star">✦</span> для солнышка</a>
+    <button class="sound-toggle" id="soundToggle" aria-label="Включить или выключить звуки" title="Звук интерфейса">♪ <span>звук</span></button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✧</span> секретная вселенная открыта <span class="tiny-star">✧</span></p>
+        <h1>С днём рождения,<br><span class="gradient-text">моё солнышко</span><span class="sparkle">✦</span></h1>
+        <p class="hero-sub">Сегодня вся эта маленькая вселенная - только для тебя.</p>
+        <p class="date-pill"><span>☾</span> 29 октября <span class="pill-divider">✦</span> день самой невероятной девочки</p>
+        <button class="primary-button" id="startButton">Открыть мой подарок <span>↗</span></button>
+        <p class="scroll-hint">внутри спрятано кое-что важное <span>↓</span></p>
+      </div>
+      <div class="hero-art" aria-label="Аниме-портрет девушки под звёздным небом" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-heart heart-one">♡</div><div class="floating-heart heart-two">♥</div>
+        <div class="art-star art-star-one">✦</div><div class="art-star art-star-two">✧</div>
+        <img class="girl-art" src="assets/girlfriend-anime.png" alt="Аниме-иллюстрация девушки с длинными чёрными волосами, карими глазами и готическими украшениями">
+        <div class="art-caption"><span>✧</span> моя любимая звёздочка <span>✧</span></div>
+      </div>
+      <div class="hero-bottom">прокрути вниз, там есть ещё магия <span>⌄</span></div>
+    </section>
+
+    <section class="section reasons-section reveal" id="reasons">
+      <div class="section-heading"><p class="eyebrow">✧ маленькие признания</p><h2>29 причин, почему <span class="gradient-text">ты особенная</span></h2><p>Нажимай на карточки - каждая хранит маленькое напоминание.</p></div>
+      <div class="reasons-grid" id="reasonsGrid"></div>
+      <p class="tiny-note">И это только 29 причин. На самом деле их намного больше. ♡</p>
+    </section>
+
+    <section class="section secrets-section reveal" id="secrets">
+      <div class="section-heading"><p class="eyebrow">☾ здесь кое-что спрятано</p><h2>Секретные <span class="gradient-text">послания</span></h2><p>Открой конвертики. Некоторые слова лучше читать в нужный момент.</p></div>
+      <div class="secret-grid">
+        <button class="secret-card" data-secret="sad"><span class="envelope">✉</span><strong>Открой, когда грустно</strong><small>маленькое напоминание для тебя</small></button>
+        <button class="secret-card" data-secret="miss"><span class="envelope">♡</span><strong>Открой, когда скучаешь</strong><small>я кое-что хочу тебе сказать</small></button>
+        <button class="secret-card" data-secret="doubt"><span class="envelope">✧</span><strong>Открой, когда сомневаешься в себе</strong><small>не забывай одну важную вещь</small></button>
+        <button class="secret-card" data-secret="future"><span class="envelope">☄</span><strong>Открой, если хочешь помечтать</strong><small>давай заглянем в наше будущее</small></button>
+      </div>
+    </section>
+
+    <section class="section future-section reveal" id="future">
+      <div class="section-heading"><p class="eyebrow">☄ наша маленькая вселенная</p><h2>То, что я хочу <span class="gradient-text">разделить с тобой</span></h2><p>Не обещания идеальной жизни, а много маленьких моментов, которые хочется прожить вместе.</p></div>
+      <div class="future-list">
+        <div class="future-item"><span class="future-icon">☕</span><div><h3>Обычные счастливые дни</h3><p>Просыпаться, болтать обо всём на свете, смеяться над ерундой и радоваться тому, что мы рядом.</p></div><span class="future-star">✦</span></div>
+        <div class="future-item"><span class="future-icon">🌙</span><div><h3>Ночные разговоры</h3><p>Обсуждать наши мечты, делиться мыслями и иногда случайно обнаруживать, что уже давно пора спать.</p></div><span class="future-star">✦</span></div>
+        <div class="future-item"><span class="future-icon">🎮</span><div><h3>Маленькие приключения</h3><p>Играть, смотреть что-нибудь вместе, пробовать новое и собирать воспоминания, понятные только нам.</p></div><span class="future-star">✦</span></div>
+        <div class="future-item"><span class="future-icon">🏡</span><div><h3>Наше общее завтра</h3><p>Постепенно воплощать планы, поддерживать друг друга и строить жизнь, в которой обоим будет хорошо.</p></div><span class="future-star">✦</span></div>
+      </div>
+    </section>
+
+
+      <section class="section music-section reveal" id="music">
+        <div class="music-card">
+          <div class="vinyl-wrap">
+            <div class="vinyl">
+              <div class="vinyl-center">♡</div>
+            </div>
+            <span class="music-spark s1">✦</span>
+            <span class="music-spark s2">✧</span>
+          </div>
+
+          <div class="music-info">
+            <p class="eyebrow">♪ саундтрек этого дня</p>
+            <h2>Эта песня - <span class="gradient-text">для тебя</span></h2>
+
+            <audio id="audio" preload="none" src="assets/song.mp3"></audio>
+
+            <div class="player-controls">
+              <button id="playButton" class="play-button" aria-label="Воспроизвести песню">▶</button>
+
+              <div class="track">
+                <div class="track-label">
+                  <span id="trackName">Песня только для тебя</span>
+                  <span id="timeLabel">0:00</span>
+                </div>
+                <input id="seekBar" type="range" min="0" max="100" value="0" aria-label="Позиция песни">
+              </div>
+
+              <div class="volume-control">
+                <span id="volumeIcon" aria-hidden="true">🔊</span>
+                <input
+                  id="volumeSlider"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  aria-label="Громкость"
+                  title="Громкость"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="finale section reveal" id="finale">
+      <div class="finale-stars">✦　✧　⋆　♡　⋆　✧　✦</div>
+      <p class="eyebrow">и последнее, но самое важное</p>
+      <h2>Пусть мир будет <span class="gradient-text">к тебе добрее</span></h2>
+      <p>А я очень хочу, чтобы среди всех твоих счастливых моментов было как можно больше тех, которые мы создадим вместе.</p>
+      <button class="primary-button" id="wishButton">Загадай желание <span>✧</span></button>
+      <p class="finale-note" id="wishMessage" aria-live="polite"></p>
+      <div class="signature">Твой котёнок♡</div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>сделано специально для тебя</span><span>✦ 29 октября ✦</span></footer>
+
+  <div class="modal" id="secretModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Закрыть">×</button><div class="modal-icon" id="modalIcon">♡</div><p class="eyebrow">маленький секрет</p><h2 id="modalTitle">Для тебя</h2><p id="modalBody"></p><button class="secondary-button" id="modalOkay">Я прочитала♡</button></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
